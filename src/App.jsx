@@ -67,7 +67,7 @@ export default function App() {
 
     setLoading(true);
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
       const prompt = `
 You are an expert document summarizer. 
