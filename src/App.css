@@ -1,0 +1,146 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, #e0f2ff, #dbeafe);
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* File Upload */
+.upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  border: 2px dashed #818cf8;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  color: #4f46e5;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.upload-label input[type="file"] {
+  display: none;
+}
+
+/* Summary Length */
+.summary-length {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.summary-length select {
+  padding: 0.3rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #c7d2fe;
+  font-size: 0.95rem;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 8rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #c7d2fe;
+  resize: vertical;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Summary Box */
+.summary {
+  background-color: #eef2ff;
+  border-left: 4px solid #818cf8;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.summary h2 {
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    min-height: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .card h1 {
+    font-size: 1.3rem;
+  }
+
+  .summary-length {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .summary-length select {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+}
