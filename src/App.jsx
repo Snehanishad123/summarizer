@@ -109,7 +109,7 @@ ${text}
   return (
     <div className="container">
       <div className="card">
-        <h1>📄 Document Summary Assistant</h1>
+        <h1>📄 Document Summariser</h1>
 
         {/* File Upload */}
         <label className="upload-label">
